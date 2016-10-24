@@ -8,7 +8,8 @@
     - Python 2 works well in most instances, but with large data it is useful to have better supported iteration function (amont other tools). The development of Python as a language is shifting to Python 3 so it will be the more supported tool in the future.
     - Upgrade pip at this point. Pip needs regular upgrading to maintain links to the most current packages
     - ` pip install --upgrade pip `
-    - alternatively, depending on your python 3 install, you may need to specify your pip upgrade such as ` pip3 install --upgrade pip `
+    - alternatively, depending on your python 3 install, you may need to specify your pip upgrade such as:
+    -  ` pip3 install --upgrade pip `
 
 3. Install PostgreSQL using brew. See [this site](https://www.moncefbelyamani.com/how-to-install-postgresql-on-a-mac-with-homebrew-and-lunchy/) for more instructions.
     - `brew install postgresql`
@@ -23,4 +24,20 @@
 5. Check that Pandas, Numpy, Sci-kit Learn are installed using:
     `pip freeze`
     If they are not present, use pip to install them.
+
+6. Installing and using virtual environments [additional info on virtual environments](https://virtualenv.pypa.io/en/stable/)
+    - Virtual environments allow segregation of projects and project requirements. Meaning that different modules or libraries are available in the established virtual space of projects allowing for cleaner requirements install and memory management.
+    - For Python 2 install the virtual environment software:
+        `pip install virtualenv'
+    - To use the virtual environment navigate to the project directory and type the following:
+        `source venv/bin/activate`
+    - To deactivate the virtual environment type the following:
+        `deactivate`
+    - To produce a file with all installed packages in the virtual environment:
+        `pip freeze > requirements.txt`
+    - To install package requirements from a file:
+        `pip install -r requirements.txt`
+
+    - For Python 3:
+        - Instructions TBD (I haven't used them in Python 3 yet)
 
