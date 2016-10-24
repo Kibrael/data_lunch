@@ -13,8 +13,12 @@
 
 3. Install PostgreSQL using brew. See [this site](https://www.moncefbelyamani.com/how-to-install-postgresql-on-a-mac-with-homebrew-and-lunchy/) for more instructions.
     - `brew install postgresql`
-    - Initializing postgres may take some additional work
-    - Additional instructions TBD
+    - After postgres is installed, initialization is required before using PostgreSQL
+        `initdb /usr/local/var/postgres`
+    - Additional documentation is available [here](https://www.postgresql.org/docs/9.5/static/app-initdb.html)
+    - Install [Psycopg2](http://initd.org/psycopg/docs/install.html) to use Python with Postgres:
+        `pip install psycopg2`
+
 
 4. Install Jupyter notebooks
     - Jupyter notebooks are an in-browser code development tool set. Code is split into cells allowing for fast iteration and graphing of data products. Code can also be easily exported using the nbconvert command:
