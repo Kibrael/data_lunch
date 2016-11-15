@@ -46,7 +46,7 @@ The basic parts of a SQL query are:
 **Joins**
     JOIN allows data tables to be combined so that filtering criteria may be used against additional tables, or to link data from separate tables together in a single result set. Different JOIN syntax is used to establish the domain of the results.  
     
-    Joining requires the use of the ON operator. Using ON requires the use of a key for each table being joined. `ON a.key = b.key` is common syntax.
+    Joining requires the use of the ON operator. Using ON requires the use of a key for each table being joined.   `ON a.key = b.key` is common syntax.
     
     When joining tables it is common practice to alias them. Meaning, to give them a shorter name that is easier to read/type/process.  
     This takes the form: `JOIN database2.tablename AS db2` where db2 is the alias.
