@@ -21,13 +21,17 @@
 
 
 4. Install Jupyter notebooks
-    - Jupyter notebooks are an in-browser code development tool set. Code is split into cells allowing for fast iteration and graphing of data products. Code can also be easily exported using the nbconvert command:
-    - `jupyter nbconvert --to html mynotebook.ipynb`
+    - Jupyter notebooks are an in-browser code development tool set. Code is split into cells allowing for fast iteration and graphing of data products. To start notebooks enter the following command into the terminal window:
+        `jupyter notebook`
+    A new browser tab will open showing the notebook directory. If both python 2 and 3 are installed you will have the option of choosing what type of notebook to create.
+    - Code can also be easily exported using the nbconvert command:
+     `jupyter nbconvert --to html mynotebook.ipynb`
     - See more on nbconvert [here](https://github.com/jupyter/nbconvert)
 
-5. Check that Pandas, Numpy, Sci-kit Learn are installed using:
+5. Check that [Pandas](http://pandas.pydata.org/pandas-docs/stable/), [Numpy](https://docs.scipy.org/doc/), [Sci-kit Learn](http://scikit-learn.org/stable/documentation.html) and [matplotlib](http://matplotlib.org/contents.html)are installed using:
     `pip freeze`
-    If they are not present, use pip to install them.
+    - If they are not present, use pip to install them. These packages are the base set of python tools for data analysis and visualizaiton.
+    - [bokeh](http://bokeh.pydata.org/en/latest/) provides an alternative in-browser visualization library, but does not allow graphics to be saved as .png or .jpg files.
 
 6. Installing and using virtual environments [additional info on virtual environments](https://virtualenv.pypa.io/en/stable/)
     - Virtual environments allow segregation of projects and project requirements. Meaning that different modules or libraries are available in the established virtual space of projects allowing for cleaner requirements install and memory management.
@@ -44,4 +48,7 @@
 
     - For Python 3:
         - Instructions TBD (I haven't used them in Python 3 yet)
+7. GitHub and Bash
+8. Stata/SASS
+
 
