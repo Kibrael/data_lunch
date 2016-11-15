@@ -4,7 +4,7 @@ SQL has sever dialects, the two that will be in use here are Postgres and SQL Se
 Most examples will feature Postgres syntax. Converting to SQL Server is often fairly simple though some functions can be quite different.
 
 
-### Basic query structure
+### Basic Query Structure
 
 The basic parts of a SQL query are:
     - SELECT
