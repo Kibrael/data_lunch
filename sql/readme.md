@@ -44,21 +44,24 @@ The basic parts of a SQL query are:
     Allows query result sets to be combined. UNION will return distinct results, UNION ALL will return the entire population of both queries.  
     
 **Joins**
-    JOIN allows data tables to be combined so that filtering criteria may be used against additional tables, or to link data from separate tables together in a single result set. Different JOIN syntax is used to establish the domain of the results.  
+    JOIN allows data tables to be combined so that filtering criteria may be used against additional tables, or to link data from separate tables together in a single result set. Different JOIN syntax is used to establish the domain of the results.    
     
-    Joining requires the use of the ON operator. Using ON requires the use of a key for each table being joined.   `ON a.key = b.key` is common syntax.
+   Joining requires the use of the ON operator. Using ON requires the use of a key for each table being joined.   
+    `ON a.key = b.key` is common syntax.
     
-    When joining tables it is common practice to alias them. Meaning, to give them a shorter name that is easier to read/type/process.  
-    This takes the form: `JOIN database2.tablename AS db2` where db2 is the alias.
+   When joining tables it is common practice to alias them. Meaning, to give them a shorter name that is easier to read/type/process.  
+    This takes the form: 
+    `JOIN database2.tablename AS db2` 
+    where db2 is the alias for the second table.
     
-    - Join: Results will be from the subset where both tables have data present
-    - Left Join: Results will include all of the table specified in the FROM clause and any additional results that match from the joined table will be included.
-    - Right Join: Results will include all of the table specified in the RIGH JOIN clause, any additional results that match from the table in the FROM clause will be included.
-    - Inner Join: Different syntax for JOIN
-    - Outer Join: All results from both tables will be included, also known as FULL JOIN or FULL OUTER JOIN.
+   - Join: Results will be from the subset where both tables have data present
+   - Left Join: Results will include all of the table specified in the FROM clause and any additional results that match from the joined table will be included.
+   - Right Join: Results will include all of the table specified in the RIGH JOIN clause, any additional results that match from the table in the FROM clause will be included.
+   - Inner Join: Different syntax for JOIN
+   - Outer Join: All results from both tables will be included, also known as FULL JOIN or FULL OUTER JOIN.
     *Note: this is a basic overview, specifying join keys parameters can drastically change the population of result sets. Check the graphic in this repository for further explanation*
     
-    *Join Syntax*
+   **Join Syntax**
     
     ```SELECT table1.field1, table1.field2, table2.field3  
         FROM database1.tablename AS table1  
