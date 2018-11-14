@@ -63,9 +63,16 @@ The basic parts of a SQL query are:
     
    **Join Syntax**
     
-    ```SELECT table1.field1, table1.field2, table2.field3  
-        FROM database1.tablename AS table1  
-        JOIN database1.tablename2 AS table2  
-        ON table1.key = table2.key
-        WHERE most_recent = "Y"  ```
+     SELECT 
+            table1.field1, 
+            table1.field2, 
+            table2.field3  
+     FROM 
+            database1.tablename AS table1  
+     JOIN 
+            database1.tablename2 AS table2  
+     ON 
+            table1.key = table2.key
+     WHERE 
+            most_recent = "Y"```
         
