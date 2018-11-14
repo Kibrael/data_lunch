@@ -74,5 +74,5 @@ The basic parts of a SQL query are:
      ON 
             table1.key = table2.key
      WHERE 
-            most_recent = "Y"```
+            most_recent = 'Y'
         
